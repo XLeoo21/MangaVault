@@ -20,9 +20,16 @@
                 <a href="/">
                     <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
                 </a>
+                <p class="mt-3 text-center text-sm font-semibold uppercase tracking-[0.3em] text-rose-600">MangaVault</p>
             </div>
 
             <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
+                @if (session('success'))
+                    <div class="mb-4 rounded-xl border border-green-200 bg-green-50 px-4 py-3 text-sm font-medium text-green-800">
+                        {{ session('success') }}
+                    </div>
+                @endif
+
                 {{ $slot }}
             </div>
         </div>

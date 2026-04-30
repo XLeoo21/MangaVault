@@ -25,8 +25,6 @@ class AppServiceProvider extends ServiceProvider
     {
         Gate::policy(Manga::class, MangaPolicy::class);
 
-        Gate::define('is_admin', fn (User $user): bool => $user->is_admin);
-
-        Gate::define('is_owner', fn (User $user, Manga $manga): bool => $user->id === $manga->user_id);
+        Gate::define('is_admin', fn (User $user): bool => (bool) $user->is_admin);
     }
 }

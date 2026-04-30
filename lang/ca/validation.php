@@ -1,0 +1,51 @@
+<?php
+
+return [
+    'accepted' => 'Cal acceptar el camp :attribute.',
+    'array' => 'El camp :attribute ha de ser un array.',
+    'between' => [
+        'array' => 'El camp :attribute ha de tenir entre :min i :max elements.',
+        'file' => 'El camp :attribute ha de pesar entre :min i :max kilobytes.',
+        'numeric' => 'El camp :attribute ha d\'estar entre :min i :max.',
+        'string' => 'El camp :attribute ha de tenir entre :min i :max caràcters.',
+    ],
+    'boolean' => 'El camp :attribute ha de ser cert o fals.',
+    'confirmed' => 'La confirmació del camp :attribute no coincideix.',
+    'current_password' => 'La contrasenya actual no és correcta.',
+    'email' => 'El camp :attribute ha de ser una adreça electrònica vàlida.',
+    'exists' => 'El valor seleccionat per a :attribute no és vàlid.',
+    'integer' => 'El camp :attribute ha de ser un nombre enter.',
+    'max' => [
+        'array' => 'El camp :attribute no pot tenir més de :max elements.',
+        'file' => 'El camp :attribute no pot pesar més de :max kilobytes.',
+        'numeric' => 'El camp :attribute no pot ser superior a :max.',
+        'string' => 'El camp :attribute no pot tenir més de :max caràcters.',
+    ],
+    'min' => [
+        'array' => 'El camp :attribute ha de tenir com a mínim :min elements.',
+        'file' => 'El camp :attribute ha de pesar com a mínim :min kilobytes.',
+        'numeric' => 'El camp :attribute ha de ser com a mínim :min.',
+        'string' => 'El camp :attribute ha de tenir com a mínim :min caràcters.',
+    ],
+    'nullable' => 'El camp :attribute pot quedar buit.',
+    'required' => 'El camp :attribute és obligatori.',
+    'same' => 'El camp :attribute i :other han de coincidir.',
+    'string' => 'El camp :attribute ha de ser un text.',
+    'unique' => 'Aquest valor de :attribute ja existeix.',
+
+    'attributes' => [
+        'author' => 'autor',
+        'current_chapter' => 'capítol actual',
+        'current_password' => 'contrasenya actual',
+        'email' => 'correu electrònic',
+        'genres' => 'gèneres',
+        'name' => 'nom',
+        'password' => 'contrasenya',
+        'password_confirmation' => 'confirmació de la contrasenya',
+        'rating' => 'puntuació',
+        'status' => 'estat',
+        'synopsis' => 'sinopsi',
+        'title' => 'títol',
+        'total_chapters' => 'capítols totals',
+    ],
+];

@@ -29,6 +29,20 @@
 
             <!-- Page Content -->
             <main>
+                <div class="mx-auto max-w-7xl px-4 pt-6 sm:px-6 lg:px-8">
+                    @if (session('success'))
+                        <div class="rounded-xl border border-green-200 bg-green-50 px-4 py-3 text-sm font-medium text-green-800">
+                            {{ session('success') }}
+                        </div>
+                    @endif
+
+                    @if (session('error'))
+                        <div class="rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm font-medium text-red-800">
+                            {{ session('error') }}
+                        </div>
+                    @endif
+                </div>
+
                 {{ $slot }}
             </main>
         </div>
